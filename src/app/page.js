@@ -12,7 +12,7 @@ export default function Home() {
 
             {/* Slide 1 */}
             <div className="carousel-item active">
-              <img src="/assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
+              <img src="/assets/img/banner-image-blaze.png" alt="" />
               <div className="info d-flex align-items-center">
                 <div className="container">
                   <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">

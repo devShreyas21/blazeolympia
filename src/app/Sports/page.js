@@ -236,7 +236,7 @@ export default function Page() {
             <div className="swiper init-swiper">
               <script
                 type="application/json"
-                classNameName="swiper-config"
+                className="swiper-config"
                 dangerouslySetInnerHTML={{
                   __html: JSON.stringify({
                     loop: true,
