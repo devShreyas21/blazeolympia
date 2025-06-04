@@ -10,6 +10,7 @@ export default function Home() {
         <section id="hero" className="hero section dark-background">
           <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
+    
             {/* Slide 1 */}
             <div className="carousel-item active">
               <img src="/assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
