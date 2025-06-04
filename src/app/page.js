@@ -18,7 +18,7 @@ export default function Home() {
                   <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
                     <div className="col-lg-6 text-center">
                       <h2>Your Ultimate Sports Destination</h2>
-                      <p>From expert coaching across all major sports, to easy facility bookings, thrilling sports tours, and corporate sports events — Blaze Olympia offers a complete sports ecosystem. Whether you're an amateur or a pro, we help you elevate your game and experience the spirit of sports like never before.</p>
+                      <p>From expert coaching across all major sports, to easy facility bookings, thrilling sports tours, and corporate sports events — Blaze Olympia offers a complete sports ecosystem. Whether you are an amateur or a pro, we help you elevate your game and experience the spirit of sports like never before.</p>
                     </div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function Home() {
               <div className="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                 <div className="content">
                   <h3>Want to Know More About Sports at Blaze Olympia?</h3>
-                  <p>Whether you're looking to book a sports facility, join our coaching programs, or plan a sports event — we’ve got you covered!
+                  <p>Whether you are looking to book a sports facility, join our coaching programs, or plan a sports event — we have got you covered!
                   </p>
                   <p>i. Fill out the form to get complete details about all our sports offerings.</p>
                   <p>ii. Want us to organize a sports event for your school, company, or group? Just let us know in the message.</p>
@@ -352,7 +352,7 @@ export default function Home() {
                   <i className="bi bi-person-check flex-shrink-0"></i>
                   <div>
                     <h4><a href="" className="stretched-link">500+ Athletes Trained</a></h4>
-                    <p>We've nurtured raw talent into rising stars with expert coaching, mentorship, and rigorous training programs.</p>
+                    <p>We have nurtured raw talent into rising stars with expert coaching, mentorship, and rigorous training programs.</p>
                   </div>
                 </div>
                 {/* <!-- End Icon Box --> */}
@@ -401,7 +401,7 @@ export default function Home() {
           {/* <!-- Section Title --> */}
           <div className="container section-title" data-aos="fade-up">
             <h2>Our Moments in Motion</h2>
-            <p>Catch the action! From tournaments to training, here's a glimpse into the high-energy world of Blaze Olympia.</p>
+            <p>Catch the action! From tournaments to training, here a glimpse into the high-energy world of Blaze Olympia.</p>
           </div>
           {/* <!-- End Section Title --> */}
 
