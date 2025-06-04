@@ -4,271 +4,53 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <>
-      <main className="main">
+      <main class="main">
 
         {/* <!-- Page Title --> */}
-        <div className="page-title dark-background" style={{ backgroundImage: "url('assets/img/page-title-bg.jpg')" }}>
-          <div className="container position-relative">
-            <h1>Blog</h1>
-            <nav className="breadcrumbs">
+        <div class="page-title dark-background" style={{ backgroundImage: "url('/assets/img/page-title-bg.jpg')" }}>
+          <div class="container position-relative">
+            <h1>Events</h1>
+            <nav class="breadcrumbs">
               <ol>
                 <li><a href="index.html">Home</a></li>
-                <li className="current">Blog</li>
+                <li class="current">Events</li>
               </ol>
             </nav>
           </div>
         </div>
         {/* <!-- End Page Title --> */}
 
-        {/* <!-- Blog Posts Section --> */}
-        <section id="blog-posts" className="blog-posts section">
+        {/* <!-- Events Section --> */}
+        <section id="about" class="about section">
 
-          <div className="container">
-            <div className="row gy-4">
+          <div class="container">
 
-              <div className="col-lg-4">
-                <article className="position-relative h-100">
+            <div class="row position-relative">
 
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-1.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">December 12</span>
-                  </div>
+              <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg" /></div>
 
-                  <div className="post-content d-flex flex-column">
+              <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="inner-title">All-in-One Sports Event Solutions</h2>
+                <div class="our-story">
+                  <p>From thrilling tournaments to high-energy school and corporate matches, we offer complete support to bring your sports event to life. Whether it's a friendly competition or a championship finale, our expert team handles everything — so you can focus on the game.
+                    From equipment to execution, we've got your event covered from start to finish.
+                    .</p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Pro-level sound systems and live commentary setups</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Full event branding — jerseys, banners, backdrops & more</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Seamless logistics — transport, setup, seating, and on-ground coordination</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Arrangements for referees, trophies, refreshments & event staff</span></li>
 
-                    <h3 className="post-title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">John Doe</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Politics</span>
-                      </div>
-                    </div>
-
-                    <p>
-                      Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                    </p>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </article>
+                  </ul>
+                </div>
               </div>
-              {/* <!-- End post list item --> */}
-
-              <div className="col-lg-4">
-                <article className="position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-2.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">March 19</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Nisi magni odit consequatur autem nulla dolorem</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Julia Parker</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
-                      </div>
-                    </div>
-
-                    <p>
-                      Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
-                    </p>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </article>
-              </div>
-              {/* <!-- End post list item --> */}
-
-              <div className="col-lg-4">
-                <article className="position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">June 24</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Maria Doe</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Sports</span>
-                      </div>
-                    </div>
-
-                    <p>
-                      Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
-                    </p>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </article>
-              </div>
-              {/* <!-- End post list item --> */}
-
-              <div className="col-lg-4">
-                <article className="position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-4.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">August 05</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Maria Doe</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Sports</span>
-                      </div>
-                    </div>
-
-                    <p>
-                      Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
-                    </p>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </article>
-              </div>
-              {/* <!-- End post list item --> */}
-
-              <div className="col-lg-4">
-                <article className="position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-5.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">September 17</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Accusamus quaerat aliquam qui debitis facilis consequatur</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">John Parker</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Politics</span>
-                      </div>
-                    </div>
-
-                    <p>
-                      In itaque assumenda aliquam voluptatem qui temporibus iusto nisi quia. Autem vitae quas aperiam nesciunt mollitia tempora odio omnis. Ipsa odit sit ut amet necessitatibus. Quo ullam ut corrupti autem consequuntur totam dolorem.
-                    </p>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </article>
-              </div>
-              {/* <!-- End post list item --> */}
-
-              <div className="col-lg-4">
-                <article className="position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-6.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">December 07</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Distinctio provident quibusdam numquam aperiam aut</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Julia White</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
-                      </div>
-                    </div>
-
-                    <p>
-                      Expedita et temporibus eligendi enim molestiae est architecto praesentium dolores. Illo laboriosam officiis quis. Labore officia quia sit voluptatem nisi est dignissimos totam. Et voluptate et consectetur voluptatem id dolor magni impedit. Omnis dolores sit.
-                    </p>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </article>
-              </div>
-              {/* <!-- End post list item --> */}
 
             </div>
+
           </div>
 
         </section>
-        {/* <!-- /Blog Posts Section --> */}
-
-        {/* <!-- Blog Pagination Section --> */}
-        <section id="blog-pagination" className="blog-pagination section">
-
-          <div className="container">
-            <div className="d-flex justify-content-center">
-              <ul>
-                <li><a href="#"><i className="bi bi-chevron-left"></i></a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#" className="active">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li>...</li>
-                <li><a href="#">10</a></li>
-                <li><a href="#"><i className="bi bi-chevron-right"></i></a></li>
-              </ul>
-            </div>
-          </div>
-
-        </section>
-        {/* <!-- /Blog Pagination Section --> */}
-
+        {/* <!-- /Events Section --> */}
       </main>
     </>
   )

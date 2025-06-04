@@ -171,12 +171,13 @@ export default function Home() {
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                     <h3>Sunny’s World</h3>
                     <p className="fst-italic">
-                      Located amidst nature, Sunny’s World offers a refreshing outdoor sports experience. From lush green grounds to well-maintained courts, it’s the ideal venue for day tournaments and training camps.
+                      Strategically located in the heart of the city, Blaze Olympia is a premium multi-sport destination designed for champions at every level. With world-class infrastructure and state-of-the-art facilities, it offers a seamless sporting experience for athletes, amateurs, and corporates alike.
                     </p>
+                    <p className="fst-italic">From floodlit arenas and synthetic courts to indoor halls and fitness zones, Blaze Olympia is the perfect venue for hosting high-energy tournaments, intensive training sessions, and competitive leagues. Whether you're booking a single game or planning a full-day sporting event, the venue guarantees convenience, professionalism, and excellence.</p>
                     <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Fully equipped indoor & outdoor courts for badminton, football, basketball, and more.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Ideal for daily bookings, sports training programs, school & college competitions.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Professional support staff and clean, secure premises to ensure top-tier experiences.</span></li>
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -191,13 +192,13 @@ export default function Home() {
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                     <h3>Yoddha Sports Club</h3>
                     <p className="fst-italic">
-                      Known for its elite infrastructure, Yoddha Sports Club is perfect for high-intensity matches and coaching. This venue is built for performance and is a favorite among professional athletes.
+                      Renowned for its elite-grade infrastructure and competitive atmosphere, Yoddha Sports Club is where serious athletes train, compete, and excel. Designed to meet professional standards, this venue caters to high-intensity matches, specialized coaching, and skill development.
                     </p>
+                    <p className="fst-italic">From finely maintained turf and professional-grade courts to advanced lighting and coaching support, Yoddha is a powerhouse of performance. Its disciplined environment and focus on precision make it a preferred choice for seasoned players and sports academies.</p>
                     <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Pro-level courts and turf suited for cricket, football, and multi-sport formats</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Expert coaching programs and rigorous practice setups</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Ideal for elite matches, coaching sessions, and private training camps</span></li>
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -212,12 +213,13 @@ export default function Home() {
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                     <h3>Ranbhumi</h3>
                     <p className="fst-italic">
-                      The ultimate battleground for sports lovers. Ranbhumi is designed for tournaments and inter-school/inter-college matches. Spacious, organized, and always event-ready.
+                      Ranbhumi stands true to its name — the ultimate battleground for rising stars and competitive sports events. With ample space, structured layouts, and a dynamic vibe, this venue is built for inter-school, inter-college, and open tournaments that demand high energy and smooth execution.
                     </p>
+                    <p className="fst-italic">From day-long competitions to weekend sports fests, Ranbhumi offers the perfect setting for organized, large-scale events. It brings together the thrill of sports and the spirit of teamwork in a venue that's ready for action.</p>
                     <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Expansive grounds tailored for tournaments and league-style matches</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Professional setup with ample seating, parking, and event coordination support</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Perfect for schools, colleges, and sports organizations</span></li>
                     </ul>
                     <p className="fst-italic">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -236,12 +238,15 @@ export default function Home() {
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                     <h3>Dhruv Academy</h3>
                     <p className="fst-italic">
-                      Where education meets athletics. Dhruv Academy offers excellent facilities for school-level sports, summer camps, and workshops. Perfect for young athletes to learn and grow.
+                     More than just a school, Dhruv Academy is a nurturing ground for budding athletes. Blending education with sports, this venue is equipped with safe, modern facilities ideal for kids and teens to train, compete, and explore their athletic talents.
+                    </p>
+                    <p className="fst-italic">
+                      With a strong focus on grassroots development, Dhruv Academy is a top choice for summer camps, workshops, and school tournaments. It promotes holistic growth through physical activity, discipline, and fun.
                     </p>
                     <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Child-friendly courts, grounds, and equipment for multiple sports</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Ideal for school-level competitions, beginner coaching, and seasonal camps</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>A balanced environment of learning, mentoring, and play</span></li>
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
