@@ -136,7 +136,7 @@ export default function Home() {
 
               <li className="nav-item col-3" role="presentation">
                 <a className="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
-                  <h4>Sunny’s World</h4>
+                  <h4>Sunny World</h4>
                 </a>
               </li>
               {/* <!-- End tab nav item --> */}
@@ -169,11 +169,11 @@ export default function Home() {
               <div className="tab-pane fade active show" id="features-tab-1" role="tabpanel">
                 <div className="row">
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                    <h3>Sunny’s World</h3>
+                    <h3>Sunny World</h3>
                     <p className="fst-italic">
                       Strategically located in the heart of the city, Blaze Olympia is a premium multi-sport destination designed for champions at every level. With world-class infrastructure and state-of-the-art facilities, it offers a seamless sporting experience for athletes, amateurs, and corporates alike.
                     </p>
-                    <p className="fst-italic">From floodlit arenas and synthetic courts to indoor halls and fitness zones, Blaze Olympia is the perfect venue for hosting high-energy tournaments, intensive training sessions, and competitive leagues. Whether you're booking a single game or planning a full-day sporting event, the venue guarantees convenience, professionalism, and excellence.</p>
+                    <p className="fst-italic">From floodlit arenas and synthetic courts to indoor halls and fitness zones, Blaze Olympia is the perfect venue for hosting high-energy tournaments, intensive training sessions, and competitive leagues. Whether you are booking a single game or planning a full-day sporting event, the venue guarantees convenience, professionalism, and excellence.</p>
                     <ul>
                       <li><i className="bi bi-check2-all"></i> <span>Fully equipped indoor & outdoor courts for badminton, football, basketball, and more.</span></li>
                       <li><i className="bi bi-check2-all"></i> <span>Ideal for daily bookings, sports training programs, school & college competitions.</span></li>
@@ -215,7 +215,7 @@ export default function Home() {
                     <p className="fst-italic">
                       Ranbhumi stands true to its name — the ultimate battleground for rising stars and competitive sports events. With ample space, structured layouts, and a dynamic vibe, this venue is built for inter-school, inter-college, and open tournaments that demand high energy and smooth execution.
                     </p>
-                    <p className="fst-italic">From day-long competitions to weekend sports fests, Ranbhumi offers the perfect setting for organized, large-scale events. It brings together the thrill of sports and the spirit of teamwork in a venue that's ready for action.</p>
+                    <p className="fst-italic">From day-long competitions to weekend sports fests, Ranbhumi offers the perfect setting for organized, large-scale events. It brings together the thrill of sports and the spirit of teamwork in a venue that ready for action.</p>
                     <ul>
                       <li><i className="bi bi-check2-all"></i> <span>Expansive grounds tailored for tournaments and league-style matches</span></li>
                       <li><i className="bi bi-check2-all"></i> <span>Professional setup with ample seating, parking, and event coordination support</span></li>

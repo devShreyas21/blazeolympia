@@ -32,8 +32,8 @@ export default function Page() {
               <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
                 <h2 class="inner-title">All-in-One Sports Event Solutions</h2>
                 <div class="our-story">
-                  <p>From thrilling tournaments to high-energy school and corporate matches, we offer complete support to bring your sports event to life. Whether it's a friendly competition or a championship finale, our expert team handles everything — so you can focus on the game.
-                    From equipment to execution, we've got your event covered from start to finish.
+                  <p>From thrilling tournaments to high-energy school and corporate matches, we offer complete support to bring your sports event to life. Whether it is a friendly competition or a championship finale, our expert team handles everything — so you can focus on the game.
+                    From equipment to execution, we are got your event covered from start to finish.
                     .</p>
                   <ul>
                     <li><i class="bi bi-check-circle"></i> <span>Pro-level sound systems and live commentary setups</span></li>
