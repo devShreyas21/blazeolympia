@@ -10,7 +10,6 @@ export default function Home() {
         <section id="hero" className="hero section dark-background">
           <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-    
             {/* Slide 1 */}
             <div className="carousel-item active">
               <img src="/assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
@@ -19,7 +18,7 @@ export default function Home() {
                   <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
                     <div className="col-lg-6 text-center">
                       <h2>Your Ultimate Sports Destination</h2>
-                      <p>From expert coaching across all major sports, to easy facility bookings, thrilling sports tours, and corporate sports events — Blaze Olympia offers a complete sports ecosystem. Whether you are an amateur or a pro, we help you elevate your game and experience the spirit of sports like never before.</p>
+                      <p>From expert coaching across all major sports, to easy facility bookings, thrilling sports tours, and corporate sports events — Blaze Olympia offers a complete sports ecosystem. Whether you're an amateur or a pro, we help you elevate your game and experience the spirit of sports like never before.</p>
                     </div>
                   </div>
                 </div>
@@ -78,7 +77,7 @@ export default function Home() {
               <div className="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                 <div className="content">
                   <h3>Want to Know More About Sports at Blaze Olympia?</h3>
-                  <p>Whether you are looking to book a sports facility, join our coaching programs, or plan a sports event — we have got you covered!
+                  <p>Whether you're looking to book a sports facility, join our coaching programs, or plan a sports event — we’ve got you covered!
                   </p>
                   <p>i. Fill out the form to get complete details about all our sports offerings.</p>
                   <p>ii. Want us to organize a sports event for your school, company, or group? Just let us know in the message.</p>
@@ -128,7 +127,7 @@ export default function Home() {
         </section>
         {/* <!-- /Get Started Section --> */}
 
-        {/* <!-- Features Section --> */}
+        {/* <!-- Venue Section --> */}
         <section id="features" className="features section">
 
           <div className="container">
@@ -257,7 +256,7 @@ export default function Home() {
           </div>
 
         </section>
-        {/* <!-- /Features Section --> */}
+        {/* <!-- /Venue Section --> */}
 
         {/* <!-- Services Section --> */}
         <section id="services" className="services section light-background">
@@ -276,7 +275,7 @@ export default function Home() {
               <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div className="service-item  position-relative">
                   <div className="icon">
-                    <i className="fa-solid fa-mountain-city"></i>
+                    <i className="fa-solid fa-dumbbell"></i>
                   </div>
                   <h3>Sports Coaching</h3>
                   <p>Unlock your athletic potential with expert-led coaching across multiple sports. Our programs focus on skill-building, discipline, and performance enhancement to shape champions at every level—beginners to advanced.</p>
@@ -288,7 +287,7 @@ export default function Home() {
               <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div className="service-item position-relative">
                   <div className="icon">
-                    <i className="fa-solid fa-arrow-up-from-ground-water"></i>
+                    <i className="fa-solid fa-building-columns"></i>
                   </div>
                   <h3>Facility Booking</h3>
                   <p>Book premium sports venues hassle-free for matches, practice sessions, or personal events. Our streamlined booking system ensures availability, convenience, and top-class infrastructure for individuals, teams, and organizations.</p>
@@ -300,7 +299,7 @@ export default function Home() {
               <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div className="service-item position-relative">
                   <div className="icon">
-                    <i className="fa-solid fa-compass-drafting"></i>
+                    <i className="fa-solid fa-users-gear"></i>
                   </div>
                   <h3>Corporate Events</h3>
                   <p>Engage your team with high-energy sports events and tournaments tailored for corporate groups. Perfect for team building, employee wellness, and networking—professionally organized at dynamic venues with full support.</p>
@@ -312,7 +311,7 @@ export default function Home() {
               <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div className="service-item position-relative">
                   <div className="icon">
-                    <i className="fa-solid fa-trowel-bricks"></i>
+                    <i className="fa-solid fa-bus-simple"></i>
                   </div>
                   <h3>Sports Tours</h3>
                   <p>Experience curated sports tours that blend competition, travel, and training. Ideal for schools, academies, and clubs—each tour is designed to offer exposure, growth, and unforgettable memories through sports.</p>
@@ -328,277 +327,7 @@ export default function Home() {
         </section>
         {/* <!-- /Services Section --> */}
 
-
-        {/* <!-- Recent Blog Posts Section --> */}
-        <section id="recent-blog-posts" className="recent-blog-posts section">
-
-          {/* <!-- Section Title --> */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Achievements That Define Our Legacy</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-          </div>
-          {/* <!-- End Section Title --> */}
-
-          <div className="container">
-
-            <div className="row gy-5">
-
-              <div className="col-xl-4 col-md-6">
-                <div className="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-1.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">December 12</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Julia Parker</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Politics</span>
-                      </div>
-                    </div>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-              <div className="col-xl-4 col-md-6">
-                <div className="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-2.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">July 17</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Mario Douglas</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Sports</span>
-                      </div>
-                    </div>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-              <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="post-item position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">September 05</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Lisa Hunter</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
-                      </div>
-                    </div>
-
-                    {/* <hr/> */}
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-              <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="post-item position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">September 05</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Lisa Hunter</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
-                      </div>
-                    </div>
-
-                    {/* <hr/> */}
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-              <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="post-item position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">September 05</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Lisa Hunter</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
-                      </div>
-                    </div>
-
-                    {/* <hr/> */}
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-            </div>
-
-          </div>
-
-        </section>
-        {/* <!-- /Recent Blog Posts Section --> */}
-
-        {/* <!-- Constructions Section --> */}
-        <section id="constructions" className="constructions section">
-
-          {/* <!-- Section Title --> */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Constructions</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-          </div>
-          {/* <!-- End Section Title --> */}
-
-          <div className="container">
-
-            <div className="row gy-4">
-
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div className="card-item">
-                  <div className="row">
-                    <div className="col-xl-5">
-                      <div className="card-bg"><img src="/assets/img/constructions-1.jpg" alt="" /></div>
-                    </div>
-                    <div className="col-xl-7 d-flex align-items-center">
-                      <div className="card-body">
-                        <h4 className="card-title">Eligendi omnis sunt veritatis.</h4>
-                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End Card Item --> */}
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <div className="card-item">
-                  <div className="row">
-                    <div className="col-xl-5">
-                      <div className="card-bg"><img src="/assets/img/constructions-2.jpg" alt="" /></div>
-                    </div>
-                    <div className="col-xl-7 d-flex align-items-center">
-                      <div className="card-body">
-                        <h4 className="card-title">Possimus ut sed velit assumenda</h4>
-                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End Card Item --> */}
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="card-item">
-                  <div className="row">
-                    <div className="col-xl-5">
-                      <div className="card-bg"><img src="/assets/img/constructions-3.jpg" alt="" /></div>
-                    </div>
-                    <div className="col-xl-7 d-flex align-items-center">
-                      <div className="card-body">
-                        <h4 className="card-title">Error beatae dolor inventore aut</h4>
-                        <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End Card Item --> */}
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                <div className="card-item">
-                  <div className="row">
-                    <div className="col-xl-5">
-                      <div className="card-bg"><img src="/assets/img/constructions-4.jpg" alt="" /></div>
-                    </div>
-                    <div className="col-xl-7 d-flex align-items-center">
-                      <div className="card-body">
-                        <h4 className="card-title">Expedita voluptas ut ut nesciunt</h4>
-                        <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End Card Item --> */}
-
-            </div>
-
-          </div>
-
-        </section>
-        {/* <!-- /Constructions Section --> */}
-
-        
-
-        {/* <!-- Alt Services Section --> */}
+        {/* <!-- Achievements That Define Our Legacy Section --> */}
         <section id="alt-services" className="alt-services section">
 
           <div className="container">
@@ -607,44 +336,55 @@ export default function Home() {
               <div className="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="/assets/img/alt-services.jpg" alt="" /></div>
 
               <div className="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+                <h3>Achievements That Define Our Legacy</h3>
+                {/* <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p> */}
 
                 <div className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                  <i className="bi bi-easel flex-shrink-0"></i>
+                  <i className="bi bi-calendar-event flex-shrink-0"></i>
                   <div>
-                    <h4><a href="" className="stretched-link">Lorem Ipsum</a></h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    <h4><a href="" className="stretched-link">200+ Events Conducted</a></h4>
+                    <p>From high-energy sports tournaments to large-scale school and corporate events, our successful execution speaks volumes.t</p>
                   </div>
                 </div>
                 {/* <!-- End Icon Box --> */}
 
                 <div className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-                  <i className="bi bi-patch-check flex-shrink-0"></i>
+                  <i className="bi bi-person-check flex-shrink-0"></i>
                   <div>
-                    <h4><a href="" className="stretched-link">Nemo Enim</a></h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                    <h4><a href="" className="stretched-link">500+ Athletes Trained</a></h4>
+                    <p>We've nurtured raw talent into rising stars with expert coaching, mentorship, and rigorous training programs.</p>
                   </div>
                 </div>
                 {/* <!-- End Icon Box --> */}
 
                 <div className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
-                  <i className="bi bi-brightness-high flex-shrink-0"></i>
+                  <i className="bi bi-briefcase flex-shrink-0"></i>
                   <div>
-                    <h4><a href="" className="stretched-link">Dine Pad</a></h4>
-                    <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                    <h4><a href="" className="stretched-link">40+ Corporate Engagements Delivered</a></h4>
+                    <p>Leading companies trust us for team-building, wellness programs, and employee tournaments that energize and connect.</p>
                   </div>
                 </div>
                 {/* <!-- End Icon Box --> */}
 
                 <div className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-                  <i className="bi bi-brightness-high flex-shrink-0"></i>
+                  <i className="bi bi-mortarboard flex-shrink-0"></i>
                   <div>
-                    <h4><a href="" className="stretched-link">Tride clov</a></h4>
-                    <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi</p>
+                    <h4><a href="" className="stretched-link">Active School & College Collaborations</a></h4>
+                    <p>Educational institutions regularly team up with Blaze Olympia to host sports fests, leagues, and training camps.</p>
                   </div>
                 </div>
                 {/* <!-- End Icon Box --> */}
+
+                <div className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+                  <i className="bi bi-globe-americas flex-shrink-0"></i>
+                  <div>
+                    <h4><a href="" className="stretched-link">15+ Sports Tours Curated</a></h4>
+                    <p>We organize domestic and international sports tours that blend performance, exposure, and adventure for all age groups.</p>
+                  </div>
+                </div>
+                {/* <!-- End Icon Box --> */}
+
+
 
               </div>
             </div>
@@ -652,31 +392,22 @@ export default function Home() {
           </div>
 
         </section>
-        {/* <!-- /Alt Services Section --> */}
+        {/* <!-- /Achievements Section --> */}
 
 
-        {/* <!-- Projects Section --> */}
+        {/* <!-- Gallery Section --> */}
         <section id="projects" className="projects section">
 
           {/* <!-- Section Title --> */}
           <div className="container section-title" data-aos="fade-up">
-            <h2>Projects</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>Our Moments in Motion</h2>
+            <p>Catch the action! From tournaments to training, here's a glimpse into the high-energy world of Blaze Olympia.</p>
           </div>
           {/* <!-- End Section Title --> */}
 
           <div className="container">
 
             <div className="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-              <ul className="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" className="filter-active">All</li>
-                <li data-filter=".filter-remodeling">Remodeling</li>
-                <li data-filter=".filter-construction">Construction</li>
-                <li data-filter=".filter-repairs">Repairs</li>
-                <li data-filter=".filter-design">Design</li>
-              </ul>
-              {/* <!-- End Portfolio Filters --> */}
 
               <div className="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -844,7 +575,7 @@ export default function Home() {
           </div>
 
         </section>
-        {/* <!-- /Projects Section --> */}
+        {/* <!-- /Gallery Section --> */}
 
         {/* <!-- Testimonials Section --> */}
         <section id="testimonials" className="testimonials section">
@@ -888,7 +619,6 @@ export default function Home() {
                   }),
                 }}
               />
-
               <div className="swiper-wrapper">
 
                 <div className="swiper-slide">
@@ -995,7 +725,7 @@ export default function Home() {
         </section>
         {/* <!-- /Testimonials Section --> */}
 
-        
+
 
       </main>
     </>
