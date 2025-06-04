@@ -8,36 +8,54 @@ export default function Home() {
 
         {/* <!-- Hero Section --> */}
         <section id="hero" className="hero section dark-background">
+          <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-          <div className="info d-flex align-items-center">
-            <div className="container">
-              <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <div className="col-lg-6 text-center">
-                  <h2>Welcome to UpConstruction</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="#get-started" className="btn-get-started">Get Started</a>
+            {/* Slide 1 */}
+            <div className="carousel-item active">
+              <img src="/assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
+              <div className="info d-flex align-items-center">
+                <div className="container">
+                  <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-lg-6 text-center">
+                      <h2>Your Ultimate Sports Destination</h2>
+                      <p>From expert coaching across all major sports, to easy facility bookings, thrilling sports tours, and corporate sports events — Blaze Olympia offers a complete sports ecosystem. Whether you're an amateur or a pro, we help you elevate your game and experience the spirit of sports like never before.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
+            {/* Slide 2 */}
             <div className="carousel-item">
-              <img src="/assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
-            </div>
-            <div className="carousel-item active">
               <img src="/assets/img/hero-carousel/hero-carousel-2.jpg" alt="" />
+              <div className="info d-flex align-items-center">
+                <div className="container">
+                  <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-lg-6 text-center">
+                      <h2>Experience Sports the Blaze Way</h2>
+                      <p>From beginner to pro, Blaze Olympia fuels your journey with expert coaching, flexible sports bookings, exciting sports tour.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            {/* Slide 3 */}
             <div className="carousel-item">
               <img src="/assets/img/hero-carousel/hero-carousel-3.jpg" alt="" />
+              <div className="info d-flex align-items-center">
+                <div className="container">
+                  <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <div className="col-lg-6 text-center">
+                      <h2>Unleash the Athlete in You</h2>
+                      <p>Join a community where coaching is personalized, bookings are seamless, sports tours are unforgettable, and corporate events bring teams together. Blaze Olympia isn’t just a service—it’s your sports lifestyle.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img src="/assets/img/hero-carousel/hero-carousel-4.jpg" alt="" />
-            </div>
-            <div className="carousel-item">
-              <img src="/assets/img/hero-carousel/hero-carousel-5.jpg" alt="" />
-            </div>
+
+            {/* Navigation Buttons */}
             <a className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
               <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
             </a>
@@ -45,8 +63,8 @@ export default function Home() {
               <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
             </a>
           </div>
-
         </section>
+
         {/* <!-- /Hero Section --> */}
 
         {/* <!-- Get Started Section --> */}
@@ -58,10 +76,12 @@ export default function Home() {
 
               <div className="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                 <div className="content">
-                  <h3>Minus hic non reiciendis ea possimus at quia.</h3>
-                  <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus dicta.
+                  <h3>Want to Know More About Sports at Blaze Olympia?</h3>
+                  <p>Whether you're looking to book a sports facility, join our coaching programs, or plan a sports event — we’ve got you covered!
                   </p>
-                  <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
+                  <p>i. Fill out the form to get complete details about all our sports offerings.</p>
+                  <p>ii. Want us to organize a sports event for your school, company, or group? Just let us know in the message.</p>
+                  <p>Our team will get in touch with you shortly to assist you!</p>
                 </div>
               </div>
 
@@ -106,6 +126,388 @@ export default function Home() {
 
         </section>
         {/* <!-- /Get Started Section --> */}
+
+        {/* <!-- Features Section --> */}
+        <section id="features" className="features section">
+
+          <div className="container">
+
+            <ul className="nav nav-tabs row  g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
+
+              <li className="nav-item col-3" role="presentation">
+                <a className="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
+                  <h4>Sunny’s World</h4>
+                </a>
+              </li>
+              {/* <!-- End tab nav item --> */}
+
+              <li className="nav-item col-3" role="presentation">
+                <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabIndex="-1" role="tab">
+                  <h4>Yoddha Sports Club</h4>
+                </a>
+                {/* <!-- End tab nav item --> */}
+
+              </li>
+              <li className="nav-item col-3" role="presentation">
+                <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabIndex="-1" role="tab">
+                  <h4>Ranbhumi</h4>
+                </a>
+              </li>
+              {/* <!-- End tab nav item --> */}
+
+              <li className="nav-item col-3" role="presentation">
+                <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" aria-selected="false" tabIndex="-1" role="tab">
+                  <h4>Dhruv Academy</h4>
+                </a>
+              </li>
+              {/* <!-- End tab nav item --> */}
+
+            </ul>
+
+            <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+              <div className="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+                <div className="row">
+                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                    <h3>Sunny’s World</h3>
+                    <p className="fst-italic">
+                      Located amidst nature, Sunny’s World offers a refreshing outdoor sports experience. From lush green grounds to well-maintained courts, it’s the ideal venue for day tournaments and training camps.
+                    </p>
+                    <ul>
+                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                    </ul>
+                  </div>
+                  <div className="col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="assets/img/features-1.jpg" alt="" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- End tab content item --> */}
+
+              <div className="tab-pane fade" id="features-tab-2" role="tabpanel">
+                <div className="row">
+                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                    <h3>Yoddha Sports Club</h3>
+                    <p className="fst-italic">
+                      Known for its elite infrastructure, Yoddha Sports Club is perfect for high-intensity matches and coaching. This venue is built for performance and is a favorite among professional athletes.
+                    </p>
+                    <ul>
+                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                    </ul>
+                  </div>
+                  <div className="col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="assets/img/features-2.jpg" alt="" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- End tab content item --> */}
+
+              <div className="tab-pane fade" id="features-tab-3" role="tabpanel">
+                <div className="row">
+                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                    <h3>Ranbhumi</h3>
+                    <p className="fst-italic">
+                      The ultimate battleground for sports lovers. Ranbhumi is designed for tournaments and inter-school/inter-college matches. Spacious, organized, and always event-ready.
+                    </p>
+                    <ul>
+                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                    </ul>
+                    <p className="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="assets/img/features-3.jpg" alt="" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- End tab content item --> */}
+
+              <div className="tab-pane fade" id="features-tab-4" role="tabpanel">
+                <div className="row">
+                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                    <h3>Dhruv Academy</h3>
+                    <p className="fst-italic">
+                      Where education meets athletics. Dhruv Academy offers excellent facilities for school-level sports, summer camps, and workshops. Perfect for young athletes to learn and grow.
+                    </p>
+                    <ul>
+                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                    </ul>
+                  </div>
+                  <div className="col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="assets/img/features-4.jpg" alt="" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- End tab content item --> */}
+
+            </div>
+
+          </div>
+
+        </section>
+        {/* <!-- /Features Section --> */}
+
+        {/* <!-- Services Section --> */}
+        <section id="services" className="services section light-background">
+
+          {/* <!-- Section Title --> */}
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+          {/* <!-- End Section Title --> */}
+
+          <div className="container">
+
+            <div className="row gy-4">
+
+              <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div className="service-item  position-relative">
+                  <div className="icon">
+                    <i className="fa-solid fa-mountain-city"></i>
+                  </div>
+                  <h3>Sports Coaching</h3>
+                  <p>Unlock your athletic potential with expert-led coaching across multiple sports. Our programs focus on skill-building, discipline, and performance enhancement to shape champions at every level—beginners to advanced.</p>
+                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+              {/* <!-- End Service Item --> */}
+
+              <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div className="service-item position-relative">
+                  <div className="icon">
+                    <i className="fa-solid fa-arrow-up-from-ground-water"></i>
+                  </div>
+                  <h3>Facility Booking</h3>
+                  <p>Book premium sports venues hassle-free for matches, practice sessions, or personal events. Our streamlined booking system ensures availability, convenience, and top-class infrastructure for individuals, teams, and organizations.</p>
+                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+              {/* <!-- End Service Item --> */}
+
+              <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="service-item position-relative">
+                  <div className="icon">
+                    <i className="fa-solid fa-compass-drafting"></i>
+                  </div>
+                  <h3>Corporate Events</h3>
+                  <p>Engage your team with high-energy sports events and tournaments tailored for corporate groups. Perfect for team building, employee wellness, and networking—professionally organized at dynamic venues with full support.</p>
+                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+              {/* <!-- End Service Item --> */}
+
+              <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div className="service-item position-relative">
+                  <div className="icon">
+                    <i className="fa-solid fa-trowel-bricks"></i>
+                  </div>
+                  <h3>Sports Tours</h3>
+                  <p>Experience curated sports tours that blend competition, travel, and training. Ideal for schools, academies, and clubs—each tour is designed to offer exposure, growth, and unforgettable memories through sports.</p>
+                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+              {/* <!-- End Service Item --> */}
+
+            </div>
+
+          </div>
+
+        </section>
+        {/* <!-- /Services Section --> */}
+
+
+        {/* <!-- Recent Blog Posts Section --> */}
+        <section id="recent-blog-posts" className="recent-blog-posts section">
+
+          {/* <!-- Section Title --> */}
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Achievements That Define Our Legacy</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+          {/* <!-- End Section Title --> */}
+
+          <div className="container">
+
+            <div className="row gy-5">
+
+              <div className="col-xl-4 col-md-6">
+                <div className="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+
+                  <div className="post-img position-relative overflow-hidden">
+                    <img src="assets/img/blog/blog-1.jpg" className="img-fluid" alt="" />
+                    <span className="post-date">December 12</span>
+                  </div>
+
+                  <div className="post-content d-flex flex-column">
+
+                    <h3 className="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+
+                    <div className="meta d-flex align-items-center">
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-person"></i> <span className="ps-2">Julia Parker</span>
+                      </div>
+                      <span className="px-3 text-black-50">/</span>
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-folder2"></i> <span className="ps-2">Politics</span>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+
+                  </div>
+
+                </div>
+              </div>
+              {/* <!-- End post item --> */}
+
+              <div className="col-xl-4 col-md-6">
+                <div className="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
+
+                  <div className="post-img position-relative overflow-hidden">
+                    <img src="assets/img/blog/blog-2.jpg" className="img-fluid" alt="" />
+                    <span className="post-date">July 17</span>
+                  </div>
+
+                  <div className="post-content d-flex flex-column">
+
+                    <h3 className="post-title">Et repellendus molestiae qui est sed omnis</h3>
+
+                    <div className="meta d-flex align-items-center">
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-person"></i> <span className="ps-2">Mario Douglas</span>
+                      </div>
+                      <span className="px-3 text-black-50">/</span>
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-folder2"></i> <span className="ps-2">Sports</span>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+
+                  </div>
+
+                </div>
+              </div>
+              {/* <!-- End post item --> */}
+
+              <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="post-item position-relative h-100">
+
+                  <div className="post-img position-relative overflow-hidden">
+                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
+                    <span className="post-date">September 05</span>
+                  </div>
+
+                  <div className="post-content d-flex flex-column">
+
+                    <h3 className="post-title">Quia assumenda est et veritati tirana ploder</h3>
+
+                    <div className="meta d-flex align-items-center">
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-person"></i> <span className="ps-2">Lisa Hunter</span>
+                      </div>
+                      <span className="px-3 text-black-50">/</span>
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
+                      </div>
+                    </div>
+
+                    {/* <hr/> */}
+
+                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+
+                  </div>
+
+                </div>
+              </div>
+              {/* <!-- End post item --> */}
+
+              <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="post-item position-relative h-100">
+
+                  <div className="post-img position-relative overflow-hidden">
+                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
+                    <span className="post-date">September 05</span>
+                  </div>
+
+                  <div className="post-content d-flex flex-column">
+
+                    <h3 className="post-title">Quia assumenda est et veritati tirana ploder</h3>
+
+                    <div className="meta d-flex align-items-center">
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-person"></i> <span className="ps-2">Lisa Hunter</span>
+                      </div>
+                      <span className="px-3 text-black-50">/</span>
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
+                      </div>
+                    </div>
+
+                    {/* <hr/> */}
+
+                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+
+                  </div>
+
+                </div>
+              </div>
+              {/* <!-- End post item --> */}
+
+              <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="post-item position-relative h-100">
+
+                  <div className="post-img position-relative overflow-hidden">
+                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
+                    <span className="post-date">September 05</span>
+                  </div>
+
+                  <div className="post-content d-flex flex-column">
+
+                    <h3 className="post-title">Quia assumenda est et veritati tirana ploder</h3>
+
+                    <div className="meta d-flex align-items-center">
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-person"></i> <span className="ps-2">Lisa Hunter</span>
+                      </div>
+                      <span className="px-3 text-black-50">/</span>
+                      <div className="d-flex align-items-center">
+                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
+                      </div>
+                    </div>
+
+                    {/* <hr/> */}
+
+                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+
+                  </div>
+
+                </div>
+              </div>
+              {/* <!-- End post item --> */}
+
+            </div>
+
+          </div>
+
+        </section>
+        {/* <!-- /Recent Blog Posts Section --> */}
 
         {/* <!-- Constructions Section --> */}
         <section id="constructions" className="constructions section">
@@ -193,98 +595,7 @@ export default function Home() {
         </section>
         {/* <!-- /Constructions Section --> */}
 
-        {/* <!-- Services Section --> */}
-        <section id="services" className="services section light-background">
-
-          {/* <!-- Section Title --> */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-          </div>
-          {/* <!-- End Section Title --> */}
-
-          <div className="container">
-
-            <div className="row gy-4">
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div className="service-item  position-relative">
-                  <div className="icon">
-                    <i className="fa-solid fa-mountain-city"></i>
-                  </div>
-                  <h3>Nesciunt Mete</h3>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-              {/* <!-- End Service Item --> */}
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div className="service-item position-relative">
-                  <div className="icon">
-                    <i className="fa-solid fa-arrow-up-from-ground-water"></i>
-                  </div>
-                  <h3>Eosle Commodi</h3>
-                  <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-              {/* <!-- End Service Item --> */}
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="service-item position-relative">
-                  <div className="icon">
-                    <i className="fa-solid fa-compass-drafting"></i>
-                  </div>
-                  <h3>Ledo Markt</h3>
-                  <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-              {/* <!-- End Service Item --> */}
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div className="service-item position-relative">
-                  <div className="icon">
-                    <i className="fa-solid fa-trowel-bricks"></i>
-                  </div>
-                  <h3>Asperiores Commodit</h3>
-                  <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-              {/* <!-- End Service Item --> */}
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div className="service-item position-relative">
-                  <div className="icon">
-                    <i className="fa-solid fa-helmet-safety"></i>
-                  </div>
-                  <h3>Velit Doloremque</h3>
-                  <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-              {/* <!-- End Service Item --> */}
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div className="service-item position-relative">
-                  <div className="icon">
-                    <i className="fa-solid fa-arrow-up-from-ground-water"></i>
-                  </div>
-                  <h3>Dolori Architecto</h3>
-                  <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                  <a href="#" className="readmore stretched-link">Read more <i className="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-              {/* <!-- End Service Item --> */}
-
-            </div>
-
-          </div>
-
-        </section>
-        {/* <!-- /Services Section --> */}
+        
 
         {/* <!-- Alt Services Section --> */}
         <section id="alt-services" className="alt-services section">
@@ -342,136 +653,6 @@ export default function Home() {
         </section>
         {/* <!-- /Alt Services Section --> */}
 
-        {/* <!-- Features Section --> */}
-        <section id="features" className="features section">
-
-          <div className="container">
-
-            <ul className="nav nav-tabs row  g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
-
-              <li className="nav-item col-3" role="presentation">
-                <a className="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
-                  <h4>Modisit</h4>
-                </a>
-              </li>
-              {/* <!-- End tab nav item --> */}
-
-              <li className="nav-item col-3" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabIndex="-1" role="tab">
-                  <h4>Praesenti</h4>
-                </a>
-                {/* <!-- End tab nav item --> */}
-
-              </li>
-              <li className="nav-item col-3" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabIndex="-1" role="tab">
-                  <h4>Explica</h4>
-                </a>
-              </li>
-              {/* <!-- End tab nav item --> */}
-
-              <li className="nav-item col-3" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" aria-selected="false" tabIndex="-1" role="tab">
-                  <h4>Nostrum</h4>
-                </a>
-              </li>
-              {/* <!-- End tab nav item --> */}
-
-            </ul>
-
-            <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-              <div className="tab-pane fade active show" id="features-tab-1" role="tabpanel">
-                <div className="row">
-                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                    <h3>Voluptatem dignissimos provident</h3>
-                    <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                    </ul>
-                  </div>
-                  <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-1.jpg" alt="" className="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End tab content item --> */}
-
-              <div className="tab-pane fade" id="features-tab-2" role="tabpanel">
-                <div className="row">
-                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                    <h3>Neque exercitationem debitis</h3>
-                    <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                    </ul>
-                  </div>
-                  <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-2.jpg" alt="" className="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End tab content item --> */}
-
-              <div className="tab-pane fade" id="features-tab-3" role="tabpanel">
-                <div className="row">
-                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                    <h3>Voluptatibus commodi accusamu</h3>
-                    <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                    </ul>
-                    <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                  </div>
-                  <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-3.jpg" alt="" className="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End tab content item --> */}
-
-              <div className="tab-pane fade" id="features-tab-4" role="tabpanel">
-                <div className="row">
-                  <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                    <h3>Omnis fugiat ea explicabo sunt</h3>
-                    <p className="fst-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <ul>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                      <li><i className="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                    </ul>
-                  </div>
-                  <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-4.jpg" alt="" className="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End tab content item --> */}
-
-            </div>
-
-          </div>
-
-        </section>
-        {/* <!-- /Features Section --> */}
 
         {/* <!-- Projects Section --> */}
         <section id="projects" className="projects section">
@@ -813,122 +994,7 @@ export default function Home() {
         </section>
         {/* <!-- /Testimonials Section --> */}
 
-        {/* <!-- Recent Blog Posts Section --> */}
-        <section id="recent-blog-posts" className="recent-blog-posts section">
-
-          {/* <!-- Section Title --> */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Recent Blog Posts</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-          </div>
-          {/* <!-- End Section Title --> */}
-
-          <div className="container">
-
-            <div className="row gy-5">
-
-              <div className="col-xl-4 col-md-6">
-                <div className="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-1.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">December 12</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Julia Parker</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Politics</span>
-                      </div>
-                    </div>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-              <div className="col-xl-4 col-md-6">
-                <div className="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-2.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">July 17</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Mario Douglas</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Sports</span>
-                      </div>
-                    </div>
-
-                    <hr />
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-              <div className="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="post-item position-relative h-100">
-
-                  <div className="post-img position-relative overflow-hidden">
-                    <img src="assets/img/blog/blog-3.jpg" className="img-fluid" alt="" />
-                    <span className="post-date">September 05</span>
-                  </div>
-
-                  <div className="post-content d-flex flex-column">
-
-                    <h3 className="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                    <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-person"></i> <span className="ps-2">Lisa Hunter</span>
-                      </div>
-                      <span className="px-3 text-black-50">/</span>
-                      <div className="d-flex align-items-center">
-                        <i className="bi bi-folder2"></i> <span className="ps-2">Economics</span>
-                      </div>
-                    </div>
-
-                    {/* <hr/> */}
-
-                    <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              {/* <!-- End post item --> */}
-
-            </div>
-
-          </div>
-
-        </section>
-        {/* <!-- /Recent Blog Posts Section --> */}
+        
 
       </main>
     </>
