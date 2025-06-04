@@ -9,7 +9,7 @@ export default function Navbar() {
 
     return (
         <div>
-            <header id="header" className="header d-flex align-items-center fixed-top" style={{backgroundColor:"black"}}>
+            <header id="header" className="header d-flex align-items-center fixed-top">
                 <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
                     <Link href="/" className="logo d-flex align-items-center">
