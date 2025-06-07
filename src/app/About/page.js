@@ -5,7 +5,6 @@ export default function Page() {
   return (
     <>
       <main className="main">
-
         {/* <!-- Page Title --> */}
         <div
           className="page-title dark-background"
