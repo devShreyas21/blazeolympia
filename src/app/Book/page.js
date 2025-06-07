@@ -1,7 +1,10 @@
 'use client'
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function Page() {
+
+    const router = useRouter()
 
     const [showModal, setShowModal] = useState(false);
 
@@ -53,6 +56,7 @@ export default function Page() {
                 if (result.success) {
                     // alert("Booking Confirmed!");
                     setShowModal(true);
+                    router.push('/')
                 } else {
                     alert("Error saving booking.");
                 }
