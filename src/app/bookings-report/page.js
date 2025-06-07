@@ -40,6 +40,8 @@ export default function BookingsReport() {
                 });
             },
         },
+
+        
         // { Header: "Time", accessor: "booking_time" },
         { Header: "Payment ID", accessor: "payment_id" },
     ], []);
