@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "vercel-build": "npm install --legacy-peer-deps && next build"
+    "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
     "aos": "^2.3.4",
     "body-parser": "^2.2.0",
     "bootstrap": "^5.3.6",
@@ -20,7 +20,6 @@
     "razorpay": "^2.9.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-table": "^7.8.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
