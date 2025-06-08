@@ -1,7 +1,28 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [showModal, setShowModal] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form)
+    });
+
+    if (res.ok) {
+      setForm({ name: "", email: "", phone: "", message: "" });
+      setShowModal(true);
+    } else {
+      alert("Something went wrong!");
+    }
+  };
+
   return (
     <>
       <main className="main">
@@ -27,7 +48,7 @@ export default function Home() {
 
             {/* Slide 2 */}
             <div className="carousel-item">
-              <img src="/assets/img/hero-carousel/hero-carousel-2.jpg" alt="" />
+              <img src="/assets/img/banner-image-blaze.png" alt="" />
               <div className="info d-flex align-items-center">
                 <div className="container">
                   <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -42,7 +63,7 @@ export default function Home() {
 
             {/* Slide 3 */}
             <div className="carousel-item">
-              <img src="/assets/img/hero-carousel/hero-carousel-3.jpg" alt="" />
+              <img src="/assets/img/banner-image-blaze.png" alt="" />
               <div className="info d-flex align-items-center">
                 <div className="container">
                   <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -86,34 +107,70 @@ export default function Home() {
               </div>
 
               <div className="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
-                <form action="forms/quote.php" method="post" className="php-email-form">
-                  <h3>Get a quote</h3>
-                  <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
+                <form className="php-email-form" onSubmit={handleSubmit}>
+                  <h3>Tell us about your query</h3>
+                  <p>Please provide details about your query, and we will assist you with the best possible solution.</p>
                   <div className="row gy-3">
 
                     <div className="col-12">
-                      <input type="text" name="name" className="form-control" placeholder="Name" required="" />
+                      <input type="text" name="name" className="form-control" placeholder="Name" required="" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
                     </div>
 
                     <div className="col-12 ">
-                      <input type="email" className="form-control" name="email" placeholder="Email" required="" />
+                      <input type="email" className="form-control" name="email" placeholder="Email" required="" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
                     </div>
 
                     <div className="col-12">
-                      <input type="text" className="form-control" name="phone" placeholder="Phone" required="" />
+                      <input type="text" className="form-control" name="phone" placeholder="Phone" required="" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} />
                     </div>
 
                     <div className="col-12">
-                      <textarea className="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                      <textarea className="form-control" name="message" rows="6" placeholder="Message" required="" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })}></textarea>
                     </div>
 
                     <div className="col-12 text-center">
-                      <div className="loading">Loading</div>
-                      <div className="error-message"></div>
-                      <div className="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                      <button type="submit">Get a quote</button>
+                      <button type="submit">Send Message</button>
                     </div>
+
+                    {/* ✅ Success Modal */}
+                    {showModal && (
+                      <div className="modal-backdrop">
+                        <div className="modal-box">
+                          <h4>We have received your message</h4>
+                          <p>We will connect with you soon!</p>
+                          <button onClick={() => setShowModal(false)}>Close</button>
+                        </div>
+                      </div>
+                    )}
+
+                    <style jsx>{`
+        .modal-backdrop {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        }
+        .modal-box {
+          background: #fff;
+          padding: 2rem;
+          border-radius: 8px;
+          text-align: center;
+          max-width: 400px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .modal-box button {
+          margin-top: 1rem;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      `}</style>
 
                   </div>
                 </form>
@@ -181,7 +238,8 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-1.jpg" alt="" className="img-fluid" />
+                    {/* <img src="assets/img/features-1.jpg" alt="" className="img-fluid" /> */}
+                    <img src="/images/sunnys.webp" alt="" className="img-fluid" />
                   </div>
                 </div>
               </div>
@@ -202,7 +260,8 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-2.jpg" alt="" className="img-fluid" />
+                    {/* <img src="assets/img/features-2.jpg" alt="" className="img-fluid" /> */}
+                    <img src="/images/YODDHA.webp" alt="" className="img-fluid" />
                   </div>
                 </div>
               </div>
@@ -227,7 +286,8 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-3.jpg" alt="" className="img-fluid" />
+                    {/* <img src="assets/img/features-3.jpg" alt="" className="img-fluid" /> */}
+                    <img src="/images/RANBHUMI.webp" alt="" className="img-fluid" />
                   </div>
                 </div>
               </div>
@@ -238,7 +298,7 @@ export default function Home() {
                   <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                     <h3>Dhruv Academy</h3>
                     <p className="fst-italic">
-                     More than just a school, Dhruv Academy is a nurturing ground for budding athletes. Blending education with sports, this venue is equipped with safe, modern facilities ideal for kids and teens to train, compete, and explore their athletic talents.
+                      More than just a school, Dhruv Academy is a nurturing ground for budding athletes. Blending education with sports, this venue is equipped with safe, modern facilities ideal for kids and teens to train, compete, and explore their athletic talents.
                     </p>
                     <p className="fst-italic">
                       With a strong focus on grassroots development, Dhruv Academy is a top choice for summer camps, workshops, and school tournaments. It promotes holistic growth through physical activity, discipline, and fun.
@@ -250,7 +310,8 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
-                    <img src="assets/img/features-4.jpg" alt="" className="img-fluid" />
+                    {/* <img src="assets/img/features-4.jpg" alt="" className="img-fluid" /> */}
+                    <img src="/images/DHRUV.webp" alt="" className="img-fluid" />
                   </div>
                 </div>
               </div>

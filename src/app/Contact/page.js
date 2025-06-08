@@ -1,16 +1,37 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import styles from "../page.module.css";
-import Image from 'next/image';
 
 export default function Page() {
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const res = await fetch("/api/contact-form", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    setLoading(false);
+
+    if (res.ok) {
+      setForm({ name: "", email: "", subject: "", message: "" });
+      setShowModal(true);
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  };
   return (
     <>
       <main className="main">
@@ -73,33 +94,81 @@ export default function Page() {
               </div>
 
               <div className="col-lg-6">
-                <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="400">
+                <form className="php-email-form" onSubmit={handleSubmit} data-aos="fade-up" data-aos-delay="400">
                   <div className="row gy-4">
                     <div className="col-md-6">
-                      <input type="text" name="name" className="form-control" placeholder="Your Name" required />
+                      <input type="text" name="name" className="form-control" placeholder="Your Name" required value={form.name}
+                        onChange={(e) => setForm({ ...form, name: e.target.value })} />
                     </div>
 
                     <div className="col-md-6">
-                      <input type="email" name="email" className="form-control" placeholder="Your Email" required />
+                      <input type="email" name="email" className="form-control" placeholder="Your Email" required value={form.email}
+                        onChange={(e) => setForm({ ...form, email: e.target.value })} />
                     </div>
 
                     <div className="col-md-12">
-                      <input type="text" name="subject" className="form-control" placeholder="Subject" required />
+                      <input type="text" name="subject" className="form-control" placeholder="Subject" required value={form.subject}
+                        onChange={(e) => setForm({ ...form, subject: e.target.value })} />
                     </div>
 
                     <div className="col-md-12">
-                      <textarea name="message" rows="6" className="form-control" placeholder="Message" required></textarea>
+                      <textarea name="message" rows="6" className="form-control" placeholder="Message" required value={form.message}
+                        onChange={(e) => setForm({ ...form, message: e.target.value })}></textarea>
                     </div>
 
                     <div className="col-md-12 text-center">
-                      <div className="loading">Loading</div>
-                      <div className="error-message"></div>
-                      <div className="sent-message">Your message has been sent. Thank you!</div>
+                      {loading && <div className="loading">Sending...</div>}
                       <button type="submit">Send Message</button>
                     </div>
                   </div>
                 </form>
+
+                {/* ✅ Modal */}
+                {showModal && (
+                  <div className="modal-backdrop">
+                    <div className="modal-box">
+                      <h4>Thank you!</h4>
+                      <p>We have received your message and will connect with you soon.</p>
+                      <button onClick={() => setShowModal(false)}>Close</button>
+                    </div>
+                  </div>
+                )}
               </div>
+
+
+              <style jsx>{`
+        .modal-backdrop {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        }
+
+        .modal-box {
+          background: #fff;
+          padding: 2rem;
+          text-align: center;
+          border-radius: 10px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-box h4 {
+          margin-bottom: 1rem;
+        }
+
+        .modal-box button {
+          margin-top: 1rem;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 0.5rem 1.5rem;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+      `}</style>
             </div>
           </div>
         </section>

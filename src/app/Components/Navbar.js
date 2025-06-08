@@ -2,6 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Navbar() {
 
@@ -12,8 +13,8 @@ export default function Navbar() {
             <header id="header" className="header d-flex align-items-center fixed-top">
                 <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-                    <Link href="/" className="logo d-flex align-items-center">
-                            <h1 className="sitename">UpConstruction</h1> <span>.</span>
+                    <Link href="/" className=" d-flex align-items-center">
+                             <img src="/images/logo.png" className='navbarLogo' />
                     </Link>
 
                     <nav id="navmenu" className="navmenu">
@@ -23,6 +24,8 @@ export default function Navbar() {
                             <li><Link href="/Sports"className={pathname == '/Sports' ? 'active' : ''}>Sports</Link></li>
                             <li><Link href="/Venues" className={pathname == '/Venues' ? 'active' : ''}>Venues</Link></li>
                             <li><Link href="/Events" className={pathname == '/Events' ? 'active' : ''}>Events</Link></li>
+                            <li><Link href="/Service" className={pathname == '/Service' ? 'active' : ''}>Service</Link></li>
+                            <li><Link href="/Tours" className={pathname == '/Tours' ? 'active' : ''}>Tours</Link></li>
                             {/* <li className="dropdown"><Link href="#"><span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
                                 <ul>
                                     <li><Link href="#">Dropdown 1</Link></li>

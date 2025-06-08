@@ -49,3 +49,18 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+
+.navbarLogo {
+  width: 15% !important;
+}
+
+.footerLogo{
+  width: 35% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarLogo {
+    width: 25% !important;
+  }
+}
