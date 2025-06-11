@@ -2,11 +2,7 @@ import mysql from "mysql2/promise";
 import nodemailer from "nodemailer";
 
 const db = await mysql.createConnection({
-  // host: "localhost",
-  // user: "root",
-  // password: "",
-  // database: "court_booking",
-
+  
   host: "193.203.184.92",
   user: "u906396894_shivshreyas",
   password: "CreationsShreyasKshirsagar@123",

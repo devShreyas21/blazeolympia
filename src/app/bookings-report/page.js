@@ -117,66 +117,79 @@ export default function BookingsReport() {
     };
 
     return (
-        <div style={{ padding: 20 }}>
-            <h2 style={{ textAlign: "center", marginBottom: 20 }}>All Bookings</h2>
-
-            {loading ? (
-                <div style={{ textAlign: "center", marginTop: 50 }}>
-                    <div className="loader" />
-                    <p style={{ marginTop: 10 }}>Loading bookings...</p>
+        <>
+            <div className="page-title dark-background" style={{ backgroundImage: "url(assets/img/page-title-bg.jpg)" }}>
+                <div className="container position-relative">
+                    <h1>Bookings</h1>
+                    <nav className="breadcrumbs">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li className="current">Bookings</li>
+                        </ol>
+                    </nav>
                 </div>
-            ) : (
-                <>
-                    <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", marginBottom: 10 }}>
-                        <input
-                            placeholder="Search bookings..."
-                            value={globalFilter ?? ""}
-                            onChange={(e) => setGlobalFilter(e.target.value)}
-                            style={{ padding: "8px", marginBottom: 10, width: "100%", maxWidth: "250px" }}
-                        />
-                        <div>
-                            <button onClick={exportToExcel} style={btnStyle}>Export XLSX</button>
-                            <button onClick={exportToPDF} style={{ ...btnStyle, marginLeft: 10 }}>Export PDF</button>
+            </div>
+            <div style={{ padding: 20 }}>
+                <h2 style={{ textAlign: "center", marginBottom: 20 }}>All Bookings</h2>
+
+                {loading ? (
+                    <div style={{ textAlign: "center", marginTop: 50 }}>
+                        <div className="loader" />
+                        <p style={{ marginTop: 10 }}>Loading bookings...</p>
+                    </div>
+                ) : (
+                    <>
+                        <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", marginBottom: 10 }}>
+                            <input
+                                placeholder="Search bookings..."
+                                value={globalFilter ?? ""}
+                                onChange={(e) => setGlobalFilter(e.target.value)}
+                                style={{ padding: "8px", marginBottom: 10, width: "100%", maxWidth: "250px" }}
+                            />
+                            <div>
+                                <button onClick={exportToExcel} style={btnStyle}>Export XLSX</button>
+                                <button onClick={exportToPDF} style={{ ...btnStyle, marginLeft: 10 }}>Export PDF</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div id="booking-table" style={{ overflowX: "auto" }}>
-                        <table style={tableStyle}>
-                            <thead>
-                                {table.getHeaderGroups().map(headerGroup => (
-                                    <tr key={headerGroup.id}>
-                                        {headerGroup.headers.map(header => (
-                                            <th key={header.id} style={thStyle}>
-                                                {flexRender(header.column.columnDef.header, header.getContext())}
-                                            </th>
-                                        ))}
-                                    </tr>
-                                ))}
-                            </thead>
-                            <tbody>
-                                {table.getRowModel().rows.map(row => (
-                                    <tr key={row.id}>
-                                        {row.getVisibleCells().map(cell => (
-                                            <td key={cell.id} style={tdStyle}>
-                                                {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                                            </td>
-                                        ))}
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
+                        <div id="booking-table" style={{ overflowX: "auto" }}>
+                            <table style={tableStyle}>
+                                <thead>
+                                    {table.getHeaderGroups().map(headerGroup => (
+                                        <tr key={headerGroup.id}>
+                                            {headerGroup.headers.map(header => (
+                                                <th key={header.id} style={thStyle}>
+                                                    {flexRender(header.column.columnDef.header, header.getContext())}
+                                                </th>
+                                            ))}
+                                        </tr>
+                                    ))}
+                                </thead>
+                                <tbody>
+                                    {table.getRowModel().rows.map(row => (
+                                        <tr key={row.id}>
+                                            {row.getVisibleCells().map(cell => (
+                                                <td key={cell.id} style={tdStyle}>
+                                                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                                                </td>
+                                            ))}
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
 
-                    <div style={{ marginTop: 10, display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
-                        <button onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()} style={btnStyle}>Previous</button>
-                        <span style={{ margin: "0 10px", alignSelf: "center" }}>
-                            Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
-                        </span>
-                        <button onClick={() => table.nextPage()} disabled={!table.getCanNextPage()} style={btnStyle}>Next</button>
-                    </div>
-                </>
-            )}
-        </div>
+                        <div style={{ marginTop: 10, display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+                            <button onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()} style={btnStyle}>Previous</button>
+                            <span style={{ margin: "0 10px", alignSelf: "center" }}>
+                                Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
+                            </span>
+                            <button onClick={() => table.nextPage()} disabled={!table.getCanNextPage()} style={btnStyle}>Next</button>
+                        </div>
+                    </>
+                )}
+            </div>
+        </>
     );
 }
 
