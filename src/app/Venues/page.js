@@ -76,8 +76,10 @@ export default function page() {
                     </ul>
                     {/* Eye icon and "See All Sports" */}
                     <div className="d-flex justify-content-start align-items-center mb-3">
-                      <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
-                      <span className="fw-semibold">See All Sports</span>
+                      <div className={`${styles.hoverYellow}`}>
+                        <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
+                        <span className="fw-semibold">See All Sports</span>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -103,8 +105,10 @@ export default function page() {
                     </ul>
                     {/* Eye icon and "See All Sports" */}
                     <div className="d-flex justify-content-start align-items-center mb-3">
-                      <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
-                      <span className="fw-semibold">See All Sports</span>
+                      <div className={`${styles.hoverYellow}`}>
+                        <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
+                        <span className="fw-semibold">See All Sports</span>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -134,8 +138,10 @@ export default function page() {
                     </p>
                     {/* Eye icon and "See All Sports" */}
                     <div className="d-flex justify-content-start align-items-center mb-3">
-                      <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
-                      <span className="fw-semibold">See All Sports</span>
+                      <div className={`${styles.hoverYellow}`}>
+                        <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
+                        <span className="fw-semibold">See All Sports</span>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -163,8 +169,10 @@ export default function page() {
                     </ul>
                     {/* Eye icon and "See All Sports" */}
                     <div className="d-flex justify-content-start align-items-center mb-3">
-                      <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
-                      <span className="fw-semibold">See All Sports</span>
+                      <div className={`${styles.hoverYellow}`}>
+                        <i className="bi bi-eye me-2" style={{ fontSize: '1.2rem' }}></i>
+                        <span className="fw-semibold">See All Sports</span>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">

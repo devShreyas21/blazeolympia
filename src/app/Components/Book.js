@@ -73,7 +73,7 @@ export default function Book({ sportName, venues, amount }) {
 
     return (
         <div className="container mt-5">
-            <div className=" p-4 mx-auto" style={{ maxWidth: '600px' }}>
+            <div className="  mx-auto" style={{ maxWidth: '600px' }}>
                 <h2 className="text-center mb-4">Book Your {sportName}</h2>
                 <form>
                     <div className="mb-3">
