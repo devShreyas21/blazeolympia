@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 
 export default function Book({ sportName, venues, amount }) {
     const router = useRouter();
-
     const [showModal, setShowModal] = useState(false);
 
     const [form, setForm] = useState({
@@ -73,62 +72,82 @@ export default function Book({ sportName, venues, amount }) {
     };
 
     return (
-        <div style={{ marginTop: "5%" }}>
-            <h2>Book Your {sportName}</h2>
-            <input name="name" placeholder="Name" onChange={handleChange} /><br />
-            <input name="email" placeholder="Email" onChange={handleChange} /><br />
-            <input name="phone" placeholder="Phone" onChange={handleChange} /><br />
-            {/* <input name="court_name" placeholder="Court Name" value={form.court_name} onChange={handleChange} /><br /> */}
-            <select name="court_name" onChange={handleChange} required>
-                <option value="">Select Venue</option>
-                {venues.map((venue, index) => (
-                    <option key={index} value={venue}>{venue}</option>
-                ))}
-            </select><br />
-            <input type="date" name="booking_date" onChange={handleChange} /><br />
-            <input type="time" name="booking_time" onChange={handleChange} /><br />
-            <input name="sports" placeholder="Sport" value={form.sports} readOnly /><br />
-            <input name="amount" type="number" placeholder="Amount" value={form.amount} onChange={handleChange} /><br />
-            <button onClick={handlePayment}>Book the Court</button>
+        <div className="container mt-5">
+            <div className=" p-4 mx-auto" style={{ maxWidth: '600px' }}>
+                <h2 className="text-center mb-4">Book Your {sportName}</h2>
+                <form>
+                    <div className="mb-3">
+                        <label className="form-label">Name</label>
+                        <input name="name" className="form-control" onChange={handleChange} placeholder="Enter your name" />
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label">Email</label>
+                        <input type="email" name="email" className="form-control" onChange={handleChange} placeholder="Enter your email" />
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label">Phone</label>
+                        <input type="tel" name="phone" className="form-control" onChange={handleChange} placeholder="Enter your phone number" />
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label">Venue</label>
+                        <select name="court_name" className="form-select" onChange={handleChange} required>
+                            <option value="">Select Venue</option>
+                            {venues.map((venue, index) => (
+                                <option key={index} value={venue}>{venue}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <div className="row mb-3">
+                        <div className="col">
+                            <label className="form-label">Booking Date</label>
+                            <input type="date" name="booking_date" className="form-control" onChange={handleChange} />
+                        </div>
+                        <div className="col">
+                            <label className="form-label">Booking Time</label>
+                            <input type="time" name="booking_time" className="form-control" onChange={handleChange} />
+                        </div>
+                    </div>
+
+                    <div className="mb-3">
+                        <label className="form-label">Sport</label>
+                        <input name="sports" className="form-control" value={form.sports} readOnly />
+                    </div>
+
+                    <div className="mb-4">
+                        <label className="form-label">Amount (₹)</label>
+                        <input type="number" name="amount" className="form-control" value={form.amount} onChange={handleChange} />
+                    </div>
+
+                    <div className="d-grid">
+                        <button type="button" className="btn btn-primary btn-lg" onClick={handlePayment}>
+                            Book the Court
+                        </button>
+                    </div>
+                </form>
+            </div>
 
             {showModal && (
-                <div style={modalOverlayStyle}>
-                    <div style={modalContentStyle}>
-                        <h2>✅ Booking Successful</h2>
-                        <p>You have successfully paid and booked your court.</p>
-                        <button onClick={() => setShowModal(false)} style={closeButtonStyle}>Close</button>
+                <div className="modal d-block" tabIndex="-1" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content text-center">
+                            <div className="modal-header">
+                                <h5 className="modal-title">✅ Booking Successful</h5>
+                                <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+                            </div>
+                            <div className="modal-body">
+                                <p>You have successfully paid and booked your court.</p>
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-success" onClick={() => setShowModal(false)}>Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             )}
         </div>
     );
 }
-
-const modalOverlayStyle = {
-    position: "fixed",
-    top: 0, left: 0, right: 0, bottom: 0,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
-    zIndex: 9999,
-};
-
-const modalContentStyle = {
-    backgroundColor: "#fff",
-    padding: "30px",
-    borderRadius: "10px",
-    textAlign: "center",
-    maxWidth: "90%",
-    width: "400px",
-};
-
-const closeButtonStyle = {
-    marginTop: "20px",
-    padding: "10px 20px",
-    borderRadius: "5px",
-    backgroundColor: "#3399cc",
-    color: "white",
-    border: "none",
-    cursor: "pointer",
-};
