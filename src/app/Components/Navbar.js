@@ -25,24 +25,7 @@ export default function Navbar() {
                             <li><Link href="/Venues" className={pathname == '/Venues' ? 'active' : ''}>Venues</Link></li>
                             <li><Link href="/Events" className={pathname == '/Events' ? 'active' : ''}>Events</Link></li>
                             <li><Link href="/Service" className={pathname == '/Service' ? 'active' : ''}>Service</Link></li>
-                            <li><Link href="/Tours" className={pathname == '/Tours' ? 'active' : ''}>Tours</Link></li>
-                            {/* <li className="dropdown"><Link href="#"><span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
-                                <ul>
-                                    <li><Link href="#">Dropdown 1</Link></li>
-                                    <li className="dropdown"><Link href="#"><span>Deep Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
-                                        <ul>
-                                            <li><Link href="#">Deep Dropdown 1</Link></li>
-                                            <li><Link href="#">Deep Dropdown 2</Link></li>
-                                            <li><Link href="#">Deep Dropdown 3</Link></li>
-                                            <li><Link href="#">Deep Dropdown 4</Link></li>
-                                            <li><Link href="#">Deep Dropdown 5</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link href="#">Dropdown 2</Link></li>
-                                    <li><Link href="#">Dropdown 3</Link></li>
-                                    <li><Link href="#">Dropdown 4</Link></li>
-                                </ul>
-                            </li> */}
+                            {/* <li><Link href="/Tours" className={pathname == '/Tours' ? 'active' : ''}>Tours</Link></li> */}
                             <li><Link href="/Contact" className={pathname == '/Contact' ? 'active' : ''}>Contact</Link></li>
                         </ul>
                         <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
