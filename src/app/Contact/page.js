@@ -38,7 +38,7 @@ export default function Page() {
         {/* <!-- Page Title --> */}
         <div
           className="page-title dark-background"
-          style={{ backgroundImage: "url('assets/img/page-title-bg.jpg')" }}
+          style={{ backgroundImage: "url('images/banners/contact-us-banner.jpeg')" }}
         >
           <div className="container position-relative">
             <h1>Contact</h1>

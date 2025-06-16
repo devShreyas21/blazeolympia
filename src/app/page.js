@@ -100,8 +100,15 @@ export default function Home() {
                   <h3>Want to Know More About Sports at Blaze Olympia?</h3>
                   <p>Whether you are looking to book a sports facility, join our coaching programs, or plan a sports event — we have got you covered!
                   </p>
-                  <p>i. Fill out the form to get complete details about all our sports offerings.</p>
-                  <p>ii. Want us to organize a sports event for your school, company, or group? Just let us know in the message.</p>
+                  <p>
+                    <i className="bi bi-check2-all" style={{ color: '#ffb802', fontSize: '18px', marginRight: '8px' }}></i>
+                    Fill out the form to get complete details about all our sports offerings.
+                  </p>
+                  <p>
+                    <i className="bi bi-check2-all" style={{ color: '#ffb802', fontSize: '18px', marginRight: '8px' }}></i>
+                    Want us to organize a sports event for your school, company, or group? Just let us know in the message.
+                  </p>
+
                   <p>Our team will get in touch with you shortly to assist you!</p>
                 </div>
               </div>
@@ -399,7 +406,7 @@ export default function Home() {
           <div className="container">
 
             <div className="row justify-content-around gy-4">
-              <div className="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="/assets/img/alt-services.jpg" alt="" /></div>
+              <div className="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="images/section/home-achivements.jpeg" alt="" /></div>
 
               <div className="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                 <h3>Achievements That Define Our Legacy</h3>
@@ -479,11 +486,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/remodeling-1.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/1.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>App 1</h4>
+                      <h4>Badminton</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/remodeling-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/1.jpeg" title="Badminton" target="_blank" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -492,11 +499,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/construction-1.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/2.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Product 1</h4>
+                      <h4>Squash</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/construction-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/2.jpeg" title="Squash" target="_blank" data-gallery="portfolio-gallery-product" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -505,11 +512,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/repairs-1.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/3.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Branding 1</h4>
+                      <h4>Football</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/repairs-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/3.jpeg" target="_blank" title="Football" data-gallery="portfolio-gallery-branding" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -518,11 +525,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/design-1.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/4.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Books 1</h4>
+                      <h4>Badminton</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/design-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/4.jpeg" target="_blank" title="Badminton" data-gallery="portfolio-gallery-book" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -531,11 +538,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/remodeling-2.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/5.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>App 2</h4>
+                      <h4>Swimming</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/remodeling-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/5.jpeg" target="_blank" title="Swimming" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -544,11 +551,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/construction-2.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/6.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Product 2</h4>
+                      <h4>Badminton</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/construction-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/6.jpeg" target="_blank" title="Badminton" data-gallery="portfolio-gallery-product" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -557,11 +564,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/repairs-2.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/7.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Branding 2</h4>
+                      <h4>Swimming</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/repairs-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/7.jpeg" target="_blank" title="Swimming" data-gallery="portfolio-gallery-branding" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -570,11 +577,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/design-2.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/8.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Books 2</h4>
+                      <h4>Football</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/design-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/8.jpeg" target="_blank" title="Football" data-gallery="portfolio-gallery-book" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -583,11 +590,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/remodeling-3.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/9.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>App 3</h4>
+                      <h4>Badminton</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/remodeling-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/9.jpeg" target="_blank" title="Badminton" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -596,11 +603,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/construction-3.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/10.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Product 3</h4>
+                      <h4>Badminton</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/construction-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/10.jpeg" target="_blank" title="Badminton" data-gallery="portfolio-gallery-product" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -609,11 +616,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/repairs-3.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/11.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Branding 3</h4>
+                      <h4>Swimming</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/repairs-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/11.jpeg" target="_blank" title="Swimming" data-gallery="portfolio-gallery-branding" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
@@ -622,11 +629,11 @@ export default function Home() {
 
                 <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
                   <div className="portfolio-content h-100">
-                    <img src="assets/img/projects/design-3.jpg" className="img-fluid" alt="" />
+                    <img src="images/gallery/12.jpeg" className="img-fluid" alt="" />
                     <div className="portfolio-info">
-                      <h4>Books 3</h4>
+                      <h4>Badminton</h4>
                       <p>Lorem ipsum, dolor sit amet consectetur</p>
-                      <a href="assets/img/projects/design-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                      <a href="images/gallery/12.jpeg" target="_blank" title="Badminton" data-gallery="portfolio-gallery-book" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                       <a href="project-details.html" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></a>
                     </div>
                   </div>

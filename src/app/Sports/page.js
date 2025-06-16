@@ -23,13 +23,13 @@ export default function Page() {
         {/*  */}
 
         {/*  <!-- Page Title --> */}
-        <div className="page-title dark-background" style={{ backgroundImage: "url(assets/img/page-title-bg.jpg)" }}>
+        <div className="page-title dark-background" style={{ backgroundImage: "url(images/banners/sports-banner.jpeg)" }}>
           <div className="container position-relative">
-            <h1>Blog</h1>
+            <h1>Sports</h1>
             <nav className="breadcrumbs">
               <ol>
                 <li><a href="index.html">Home</a></li>
-                <li className="current">Blog</li>
+                <li className="current">Sports</li>
               </ol>
             </nav>
           </div>

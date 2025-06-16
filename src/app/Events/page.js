@@ -7,7 +7,7 @@ export default function Page() {
       <main class="main">
 
         {/* <!-- Page Title --> */}
-        <div class="page-title dark-background" style={{ backgroundImage: "url('/assets/img/page-title-bg.jpg')" }}>
+        <div class="page-title dark-background" style={{ backgroundImage: "url('images/banners/events-banner.jpeg')" }}>
           <div class="container position-relative">
             <h1>Events</h1>
             <nav class="breadcrumbs">
@@ -27,7 +27,7 @@ export default function Page() {
 
             <div class="row position-relative">
 
-              <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg" /></div>
+              <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="/images/section/all-in-one-events.jpeg" /></div>
 
               <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
                 <h2 class="inner-title">All-in-One Sports Event Solutions</h2>

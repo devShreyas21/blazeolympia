@@ -8,7 +8,7 @@ export default function Page() {
         {/* <!-- Page Title --> */}
         <div
           className="page-title dark-background"
-          style={{ backgroundImage: "url('/assets/img/page-title-bg.jpg')" }}
+          style={{ backgroundImage: "url('images/banners/about-us-banner.jpeg')" }}
         >
           <div className="container position-relative">
             <h1>About</h1>
@@ -29,7 +29,7 @@ export default function Page() {
 
             <div className="row position-relative">
 
-              <div className="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg" /></div>
+              <div className="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="/images/section/vission-mission.jpeg" /></div>
 
               <div className="col-lg-7" data-aos="fade-up" data-aos-delay="100">
                 {/* <h2 className="inner-title">Consequatur eius et magnam</h2> */}
