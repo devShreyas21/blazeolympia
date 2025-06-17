@@ -78,7 +78,7 @@ export default function Footer() {
                 </div>
 
                 <div className="container copyright text-center mt-4">
-                    <p>© <span>Copyright</span> <strong className="px-1 sitename">UpConstruction</strong> <span>All Rights Reserved</span></p>
+                    <p>© <span>Copyright</span> <strong className="px-1 sitename">Blazeolympia</strong> <span>All Rights Reserved</span></p>
                     <div className="credits">
                         Designed by <Link href="https://dzignstory.com/" target='_blank'>Dzign Story</Link>
                     </div>
