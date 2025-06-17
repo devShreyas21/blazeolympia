@@ -8,14 +8,26 @@ export default function Page() {
   const [showBooking, setShowBooking] = useState(false);
   const [showEnroll, setShowEnroll] = useState(false);
 
-  const toggleBooking = () => {
-    setShowBooking(prev => !prev);
+  const openBooking = () => {
+    setShowBooking(true);
     setShowEnroll(false);
   };
-  const toggleEnroll = () => {
-    setShowEnroll(prev => !prev);
+
+  const openEnroll = () => {
+    setShowEnroll(true);
     setShowBooking(false);
   };
+
+  const closeEnroll = () => {
+    setShowEnroll(false);
+  };
+
+  const closeBooking = () => {
+  setShowBooking(false);
+};
+
+
+
 
   return (
     <>
@@ -77,15 +89,17 @@ export default function Page() {
                     <div className="d-flex justify-content-between">
                       <button
                         className="btn btn-primary"
-                        onClick={toggleBooking}
+                        onClick={openBooking}
                       >
-                        {showBooking ? 'Close Booking' : 'Book Court'}
+                        {/* {showBooking ? 'Close Booking' : 'Book Court'} */}
+                        Book Court
                       </button>
                       <button
                         className="btn btn-outline-primary"
-                        onClick={toggleEnroll}
+                        onClick={openEnroll}
                       >
-                        {showEnroll ? 'Close Form' : 'Enroll for Coaching'}
+                        {/* {showEnroll ? 'Close Form' : 'Enroll for Coaching'} */}
+                        Enroll for Coaching
                       </button>
                     </div>
 
@@ -94,7 +108,8 @@ export default function Page() {
                         <Book
                           sportName="Basketball"
                           venues={['Phoenix Stadium', 'Star Court']}
-                          amount={500}                  // booking fee
+                          amount={500}
+                          onClose={closeBooking}
                         />
                       </div>
                     )}
@@ -104,7 +119,8 @@ export default function Page() {
                         <Enroll
                           sportName="Basketball"
                           venues={['Phoenix Stadium', 'Star Court']}
-                          amount={1200}                 // coaching fee (per month)
+                          amount={1200}
+                          onClose={closeEnroll}
                         />
                       </div>
                     )}

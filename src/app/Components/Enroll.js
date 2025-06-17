@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Enroll({ sportName, venues, amount }) {
+export default function Enroll({ sportName, venues, amount, onClose }) {
     const router = useRouter();
-    const [showModal, setShowModal] = useState(false);
+    
 
     const [form, setForm] = useState({
         name: "",
@@ -21,6 +21,7 @@ export default function Enroll({ sportName, venues, amount }) {
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
+    
 
     const handlePayment = async () => {
         const orderRes = await fetch("/api/create-order", {
@@ -58,7 +59,7 @@ export default function Enroll({ sportName, venues, amount }) {
 
                 const result = await enrollRes.json();
                 if (result.success) {
-                    setShowModal(true);
+                    setShowModal(false);
                     router.push('/');
                 } else {
                     alert("Error saving enrollment.");
@@ -77,86 +78,78 @@ export default function Enroll({ sportName, venues, amount }) {
     };
 
     return (
-        <div className="container mt-5">
-            <div className="mx-auto" style={{ maxWidth: '600px' }}>
-                <h2 className="text-center mb-4">Enroll for {sportName} Coaching</h2>
-                <form>
-                    <div className="mb-3">
-                        <label className="form-label">Name</label>
-                        <input name="name" className="form-control" onChange={handleChange} placeholder="Enter your name" />
-                    </div>
+        <>
 
-                    <div className="mb-3">
-                        <label className="form-label">Email</label>
-                        <input type="email" name="email" className="form-control" onChange={handleChange} placeholder="Enter your email" />
-                    </div>
+            <div className="modal d-block" tabIndex="-1" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                <div className="modal-dialog modal-lg modal-dialog-centered">
+                    <div className="modal-content p-4">
+                        <div className="modal-header">
+                            <h5 className="modal-title">Enroll for {sportName} Coaching</h5>
+                            <button type="button" className="btn-close" onClick={onClose}></button>
+                        </div>
+                        <div className="modal-body">
+                            <form>
+                                <div className="mb-3">
+                                    <label className="form-label">Name</label>
+                                    <input name="name" className="form-control" onChange={handleChange} placeholder="Enter your name" />
+                                </div>
 
-                    <div className="mb-3">
-                        <label className="form-label">Phone</label>
-                        <input type="tel" name="phone" className="form-control" onChange={handleChange} placeholder="Enter your phone number" />
-                    </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Email</label>
+                                    <input type="email" name="email" className="form-control" onChange={handleChange} placeholder="Enter your email" />
+                                </div>
 
-                    <div className="mb-3">
-                        <label className="form-label">Address</label>
-                        <input name="address" className="form-control" onChange={handleChange} placeholder="Enter your address" />
-                    </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Phone</label>
+                                    <input type="tel" name="phone" className="form-control" onChange={handleChange} placeholder="Enter your phone number" />
+                                </div>
 
-                    <div className="mb-3">
-                        <label className="form-label">Month</label>
-                        <input name="month" className="form-control" onChange={handleChange} placeholder="e.g., June 2025" />
-                    </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Address</label>
+                                    <input name="address" className="form-control" onChange={handleChange} placeholder="Enter your address" />
+                                </div>
 
-                    <div className="mb-3">
-                        <label className="form-label">Venue</label>
-                        <select name="venue_name" className="form-select" onChange={handleChange} required>
-                            <option value="">Select Venue</option>
-                            {venues.map((venue, index) => (
-                                <option key={index} value={venue}>{venue}</option>
-                            ))}
-                        </select>
-                    </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Month</label>
+                                    <input name="month" className="form-control" onChange={handleChange} placeholder="e.g., June 2025" />
+                                </div>
 
-                    <div className="mb-3">
-                        <label className="form-label">Desired Start Date</label>
-                        <input type="date" name="desired_start_date" className="form-control" onChange={handleChange} />
-                    </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Venue</label>
+                                    <select name="venue_name" className="form-select" onChange={handleChange} required>
+                                        <option value="">Select Venue</option>
+                                        {venues.map((venue, index) => (
+                                            <option key={index} value={venue}>{venue}</option>
+                                        ))}
+                                    </select>
+                                </div>
 
-                    <div className="mb-3">
-                        <label className="form-label">Sport</label>
-                        <input name="sports_name" className="form-control" value={form.sports_name} readOnly />
-                    </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Desired Start Date</label>
+                                    <input type="date" name="desired_start_date" className="form-control" onChange={handleChange} />
+                                </div>
 
-                    <div className="mb-4">
-                        <label className="form-label">Amount (₹)</label>
-                        <input type="number" name="amount" className="form-control" value={form.amount} onChange={handleChange} />
-                    </div>
+                                <div className="mb-3">
+                                    <label className="form-label">Sport</label>
+                                    <input name="sports_name" className="form-control" value={form.sports_name} readOnly />
+                                </div>
 
-                    <div className="d-grid">
-                        <button type="button" className="btn btn-primary btn-lg" onClick={handlePayment}>
-                            Enroll Now
-                        </button>
-                    </div>
-                </form>
-            </div>
+                                <div className="mb-4">
+                                    <label className="form-label">Amount (₹)</label>
+                                    <input type="number" name="amount" className="form-control" value={form.amount} onChange={handleChange} />
+                                </div>
 
-            {showModal && (
-                <div className="modal d-block" tabIndex="-1" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content text-center">
-                            <div className="modal-header">
-                                <h5 className="modal-title">✅ Enrollment Successful</h5>
-                                <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
-                            </div>
-                            <div className="modal-body">
-                                <p>You have successfully paid and enrolled for coaching.</p>
-                            </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-primary" onClick={() => setShowModal(false)}>Close</button>
-                            </div>
+                                <div className="d-grid">
+                                    <button type="button" className="btn btn-primary btn-lg" onClick={handlePayment}>
+                                        Enroll Now
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            )}
-        </div>
+            </div>
+
+        </>
     );
 }

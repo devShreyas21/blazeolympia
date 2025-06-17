@@ -55,7 +55,7 @@ export default function Page() {
           {/* <!-- Section Title --> */}
           <div className="container section-title" data-aos="fade-up">
             <h2>Team</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <p>Skill, passion, teamwork—three forces driving one ultimate dream.</p>
           </div>
           {/* <!-- End Section Title --> */}
 

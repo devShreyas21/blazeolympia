@@ -36,7 +36,7 @@ export default function Footer() {
                                 <li><Link href="/Sports">Sports</Link></li>
                                 <li><Link href="/Venues">Venues</Link></li>
                                 <li><Link href="/Events">Events</Link></li>
-                                <li><Link href="/Tours">Tours</Link></li>
+                                {/* <li><Link href="/Tours">Tours</Link></li> */}
                                 <li><Link href="/Contact">Contact</Link></li>
                             </ul>
                         </div>
@@ -63,7 +63,7 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        <div className="col-lg-2 col-md-3 footer-links">
+                        {/* <div className="col-lg-2 col-md-3 footer-links">
                             <h4>Nobis illum</h4>
                             <ul>
                                 <li><Link href="#">Ipsam</Link></li>
@@ -72,7 +72,7 @@ export default function Footer() {
                                 <li><Link href="#">Trodelas</Link></li>
                                 <li><Link href="#">Flexo</Link></li>
                             </ul>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export default function Footer() {
                 <div className="container copyright text-center mt-4">
                     <p>© <span>Copyright</span> <strong className="px-1 sitename">UpConstruction</strong> <span>All Rights Reserved</span></p>
                     <div className="credits">
-                        Designed by <Link href="https://bootstrapmade.com/">BootstrapMade</Link>
+                        Designed by <Link href="https://dzignstory.com/" target='_blank'>Dzign Story</Link>
                     </div>
                 </div>
 

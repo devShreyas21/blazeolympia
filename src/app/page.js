@@ -287,10 +287,10 @@ export default function Home() {
                       <li><i className="bi bi-check2-all"></i> <span>Professional setup with ample seating, parking, and event coordination support</span></li>
                       <li><i className="bi bi-check2-all"></i> <span>Perfect for schools, colleges, and sports organizations</span></li>
                     </ul>
-                    <p className="fst-italic">
+                    {/* <p className="fst-italic">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                       magna aliqua.
-                    </p>
+                    </p> */}
                   </div>
                   <div className="col-lg-6 order-1 order-lg-2 text-center">
                     {/* <img src="assets/img/features-3.jpg" alt="" className="img-fluid" /> */}

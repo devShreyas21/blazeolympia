@@ -1,10 +1,13 @@
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Book({ sportName, venues, amount }) {
+export default function Book({ sportName, venues, amount, onClose }) {
     const router = useRouter();
-    const [showModal, setShowModal] = useState(false);
+
+    const [showSuccessModal, setShowSuccessModal] = useState(false);
+
+
 
     const [form, setForm] = useState({
         name: "",
@@ -53,7 +56,8 @@ export default function Book({ sportName, venues, amount }) {
 
                 const result = await bookingRes.json();
                 if (result.success) {
-                    setShowModal(true);
+                    onClose();
+                    setShowSuccessModal(true);
                     router.push('/');
                 } else {
                     alert("Error saving booking.");
@@ -73,76 +77,89 @@ export default function Book({ sportName, venues, amount }) {
 
     return (
         <div className="container mt-5">
-            <div className="  mx-auto" style={{ maxWidth: '600px' }}>
-                <h2 className="text-center mb-4">Book Your {sportName}</h2>
-                <form>
-                    <div className="mb-3">
-                        <label className="form-label">Name</label>
-                        <input name="name" className="form-control" onChange={handleChange} placeholder="Enter your name" />
-                    </div>
+            {/* Booking Form Modal */}
 
-                    <div className="mb-3">
-                        <label className="form-label">Email</label>
-                        <input type="email" name="email" className="form-control" onChange={handleChange} placeholder="Enter your email" />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Phone</label>
-                        <input type="tel" name="phone" className="form-control" onChange={handleChange} placeholder="Enter your phone number" />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Venue</label>
-                        <select name="court_name" className="form-select" onChange={handleChange} required>
-                            <option value="">Select Venue</option>
-                            {venues.map((venue, index) => (
-                                <option key={index} value={venue}>{venue}</option>
-                            ))}
-                        </select>
-                    </div>
-
-                    <div className="row mb-3">
-                        <div className="col">
-                            <label className="form-label">Booking Date</label>
-                            <input type="date" name="booking_date" className="form-control" onChange={handleChange} />
+            <div className="modal d-block" tabIndex="-1" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                <div className="modal-dialog modal-lg modal-dialog-centered">
+                    <div className="modal-content p-4">
+                        <div className="modal-header">
+                            <h5 className="modal-title">Book Your {sportName}</h5>
+                            <button type="button" className="btn-close" onClick={onClose}></button>
                         </div>
-                        <div className="col">
-                            <label className="form-label">Booking Time</label>
-                            <input type="time" name="booking_time" className="form-control" onChange={handleChange} />
+                        <div className="modal-body">
+                            <form>
+                                <div className="mb-3">
+                                    <label className="form-label">Name</label>
+                                    <input name="name" className="form-control" onChange={handleChange} placeholder="Enter your name" />
+                                </div>
+
+                                <div className="mb-3">
+                                    <label className="form-label">Email</label>
+                                    <input type="email" name="email" className="form-control" onChange={handleChange} placeholder="Enter your email" />
+                                </div>
+
+                                <div className="mb-3">
+                                    <label className="form-label">Phone</label>
+                                    <input type="tel" name="phone" className="form-control" onChange={handleChange} placeholder="Enter your phone number" />
+                                </div>
+
+                                <div className="mb-3">
+                                    <label className="form-label">Venue</label>
+                                    <select name="court_name" className="form-select" onChange={handleChange} required>
+                                        <option value="">Select Venue</option>
+                                        {venues.map((venue, index) => (
+                                            <option key={index} value={venue}>{venue}</option>
+                                        ))}
+                                    </select>
+                                </div>
+
+                                <div className="row mb-3">
+                                    <div className="col">
+                                        <label className="form-label">Booking Date</label>
+                                        <input type="date" name="booking_date" className="form-control" onChange={handleChange} />
+                                    </div>
+                                    <div className="col">
+                                        <label className="form-label">Booking Time</label>
+                                        <input type="time" name="booking_time" className="form-control" onChange={handleChange} />
+                                    </div>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label className="form-label">Sport</label>
+                                    <input name="sports" className="form-control" value={form.sports} readOnly />
+                                </div>
+
+                                <div className="mb-4">
+                                    <label className="form-label">Amount (₹)</label>
+                                    <input type="number" name="amount" className="form-control" value={form.amount} onChange={handleChange} />
+                                </div>
+
+                                <div className="d-grid">
+                                    <button type="button" className="btn btn-primary btn-lg" onClick={handlePayment}>
+                                        Book the Court
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Sport</label>
-                        <input name="sports" className="form-control" value={form.sports} readOnly />
-                    </div>
-
-                    <div className="mb-4">
-                        <label className="form-label">Amount (₹)</label>
-                        <input type="number" name="amount" className="form-control" value={form.amount} onChange={handleChange} />
-                    </div>
-
-                    <div className="d-grid">
-                        <button type="button" className="btn btn-primary btn-lg" onClick={handlePayment}>
-                            Book the Court
-                        </button>
-                    </div>
-                </form>
+                </div>
             </div>
 
-            {showModal && (
+
+            {/* Success Modal */}
+            {showSuccessModal && (
                 <div className="modal d-block" tabIndex="-1" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content text-center">
                             <div className="modal-header">
                                 <h5 className="modal-title">✅ Booking Successful</h5>
-                                <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+                                <button type="button" className="btn-close" onClick={() => setShowSuccessModal(false)}></button>
                             </div>
                             <div className="modal-body">
                                 <p>You have successfully paid and booked your court.</p>
                             </div>
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-success" onClick={() => setShowModal(false)}>Close</button>
+                                <button type="button" className="btn btn-success" onClick={() => setShowSuccessModal(false)}>Close</button>
                             </div>
                         </div>
                     </div>

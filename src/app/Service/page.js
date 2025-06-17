@@ -60,7 +60,7 @@ export default function Page() {
         {/* <!-- Section Title --> */}
         <div className="container section-title" data-aos="fade-up">
           <h2>Services</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <p>Unlock the Game: Premier Sports Facilities, Elite Events, and Unforgettable Tours!</p>
         </div>
         {/* <!-- End Section Title --> */}
 
